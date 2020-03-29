@@ -1,0 +1,71 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header{
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header .twitter {
+    position: absolute;
+    right: 15px;
+}
+
+.article-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+.article-wrapper .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    padding: 15px;
+}
+
+.article .article-content-wrapper {
+    color: #444;
+}
+
+.article .date {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.article .article-title {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 0.6em;
+}
+
+.article .article-content {
+    line-height: 1.2em;
+}
+
+.article-wrapper .article:nth-child(1) {
+    background-color: #ff9e9e;
+  }
+
+.article-wrapper .article:nth-child(2) {
+    background-color: #ffbbbb;
+  }
+
+.article-wrapper .article:nth-child(3) {
+    background-color: #ffcece;
+  }
+
+.article-wrapper .article:nth-child(4) {
+    background-color: #ffdbdb;
+  }
+
+.article-wrapper .article:nth-child(5) {
+    background-color: #ffe7e7;
+  }
