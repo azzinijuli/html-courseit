@@ -1,34 +1,37 @@
-.body {
-    background-image: linear-gradient(to right, rgb(207, 126, 207), white) ;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.wrapper {
+    background: linear-gradient(to right, rgb(207, 126, 207), rgb(245, 237, 223)) ;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-.content-wrapper {    
+.login {    
     display: flex;
+    width: 100%;
+    max-width: 750px;
+    margin: 10px;
+    box-sizing: content-box;
     background-color: white;
-    padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 25vw;
-    height: 85vh;
-    border-radius: 5px;
+    border-radius: 8px;    
+    overflow: hidden;
 }
 
-.mountain-img {
-    display: flex;
-    align-self: right;
-    width: 30vw;
-    height: 94vh;
-    border-radius: 5px;
-}
+.mountain-image {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-image: url(https://i.pinimg.com/736x/a6/60/53/a66053fe7a3b721ba8f7c93b879c5862.jpg);
+    background-position: center;
+    background-size: cover;
 
-.content-wrapper .text{
-    display: flex;
-    flex-direction: column;
+}   
+
+.text{
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 25px;
 }
 
 .form-title {
@@ -37,16 +40,17 @@
 }
 
 .form-subtitle {
+    display: inline-block;
     color: grey;
     font-size: 1.2em;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
 }
 
@@ -83,8 +87,12 @@
     color: grey
 }
 
+.email-password {
+    display: flex;
+    flex-direction: column;
+}
+
 .email-text {
-    font-size: 0.8em;
     color: grey;
     margin-bottom: 1em;
     margin-top: 1em;
@@ -100,16 +108,14 @@ input[type=password] {
     border-bottom: 1px solid purple;
 }
 
-.remember-forgot {
+.check {
     display: flex;
-    flex-direction: row;
-    align-items: left;
+    justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.remember-forgot .forgot-password{
-    padding-left: 90px;
+.check .forgot-password{
     color: gray;
 }
 
@@ -117,22 +123,22 @@ input[type=password] {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    align-items: left;
 }
 
-.button {
+.boton-login {
     padding: 10px 20px;
     border-radius: 10px;
     margin-right: 30px;
     margin-top: 15px;
-}
-
-.buttons2 .login {
     background-image: linear-gradient(to right, rgb(143, 72, 177) 0%, rgb(231, 125, 222) 41%, rgb(235, 177, 130) 100%);
     color: white;
 }
 
-.buttons2 .signup {
+.boton-signup {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-top: 15px;
     border: 1px solid grey;
 }
 

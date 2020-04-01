@@ -1,0 +1,57 @@
+.body {
+  background-color: #fafafa;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fcf8f8;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: grey;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: -10px 10px 40px 1px #bbbbbb;
+}
+
+.text {
+  width: 48%;
+  padding: 25px;
+  box-sizing: content-box;
+}
+
+.text .text-title {
+  font-size: 1.3em;
+}
+
+.text .text-paragraph {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.continue-reading {
+  text-decoration: none;
+}
+
+.continue-reading:hover {
+  font-size:1.1em;
+}
+
+.text-decoration {
+  background-image: url(https://envisionitagency.com/uploads/2018/04/StockSnap_6UHHE19YG7-750x500.jpg);
+  background-position: center;
+  background-size:cover;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
