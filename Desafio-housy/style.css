@@ -1,3 +1,7 @@
+.body {
+    margin: 0;
+}
+
 .wrapper {
     background: linear-gradient(to right, rgb(207, 126, 207), rgb(245, 237, 223)) ;
     display: flex;
@@ -11,7 +15,6 @@
     display: flex;
     width: 100%;
     max-width: 750px;
-    margin: 10px;
     box-sizing: content-box;
     background-color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

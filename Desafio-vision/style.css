@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.body {
+    background-color: rgb(238, 238, 238);
+    margin: 0px;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+
+}
+
+.wrapper {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    font-family: 'roboto';
+}
+
+.vision {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.welcome {
+    text-align: center;
+    color: white;
+    padding: 80px 50px;
+    box-sizing: border-box;
+    background-image: url(https://images.unsplash.com/photo-1429667947446-3c93a979b7e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.welcome .welcome-text {
+    color: rgb(192, 191, 191);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.button-access {
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: lightseagreen;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button-access:hover {
+    background-color: rgb(50, 214, 206);
+}
+
+.account {
+    background-color: white;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.account-title {
+    text-transform: uppercase;
+}
+
+.account-text1 {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.account-text2 {
+    font-size: 0.8em
+}
+
+.greetings {
+    font-size: 0.8em;
+}
+
+.profile-info {
+    display: flex;
+    margin-top: 10px;
+}
+
+.profile-picture {
+    height: 55px;
+    width: 55px;
+    border-radius: 30px;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    font-size: 0.8em;
+    line-height: 0.3em;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.feedback {
+    background-color: lightseagreen;
+    padding: 30px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+.feedback-title {
+    text-transform: uppercase;
+}
+
+.feedback-text {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(101, 219, 219);
+}
+
+.button-feedback {
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: white;
+    color: lightseagreen;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button-feedback:hover {
+    background-color: rgb(50, 214, 206);
+    color:white;
+}
+
+.company {
+    background-color: white;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.social-medias {
+    background-color: black;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.social-medias {
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.icon {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 40px;
+}
