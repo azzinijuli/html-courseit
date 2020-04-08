@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
+.body {
+  margin: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.main .color-background {
+  height: 12rem;
+  width: 100%;
+  background-color: #fd6e86;
+}
+.main .wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  background-color: #f0f0f0;
+}
+.main .card {
+  margin-top: -6rem;
+  background-color: #f8f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.main .card-title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+.main .card-text {
+  color: #999999;
+}
+.main .card-button {
+  background-color: #fd6e86;
+  padding: 1rem;
+  max-width: 10rem;
+  display: flex;
+  align-self: center;
+  text-decoration: none;
+  color: white;
+  margin: 2rem 0;
+  border-radius: 2px;
+}
+.main .card-button:hover {
+  transition: 0.4s;
+  background-color: #ff93a3;
+}
+.main .save-money {
+  background-color: #0c0b0b;
+  padding: 2rem;
+  box-sizing: content-box;
+  font-weight: bold;
+}
+.main .save-title {
+  color: #f8f5f5;
+  display: inline-block;
+}
+.main .save-text {
+  color: #999999;
+}
+.main .save-link {
+  color: #fd6e86;
+}
+.main .help {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #ffd0d7;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.main .help-title {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.main .help-link {
+  color: #fd6e86;
+  padding-bottom: 0.5rem;
+}
+.main .footer {
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #999999;
+}
+.main .links-wrapper {
+  padding: 0.5rem 0;
+}
+.main .footer-link {
+  color: #0c0b0b;
+}
+.main .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
