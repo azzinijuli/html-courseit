@@ -1,6 +1,157 @@
-body {
-    background-color: #f0f0f0;
-    .h1 {
-        font-size: 3em;
+* {
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+$color: #EEF4D4;
+$color2: white;
+$color3: #7C7A7A;
+$color4: #494949;
+$color5: #39393A;
+
+.body {
+    background-color: white;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    max-width: 100vw;
+
+    .title {
+        background-color: $color2;
+        display: inline-block;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .content-wrapper {
+        background-color: $color;
+        display: flex;
+        flex-direction: row-reverse;
+
+        .wrapper-dios {
+            .subtitle {
+                margin: 10px;
+            }
+        }
+
+        .sidebar {
+            flex-shrink: 0;
+            min-width: 200px;
+
+            .sidebar-title {
+                margin-left: 10px;
+            }
+
+            .filter-list {
+                list-style-type: none;
+                padding: 10px;
+            }
+
+            .filters-list {
+                display: flex;
+                flex-direction: column;
+                
+                .filter-type {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    background-color: $color2;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 0;
+                    border-radius: 20px;
+                    &:hover {
+                        background-color: $color;
+                        transition: 0.4s;
+                    .cross-sign {
+                        &:hover {
+                            color: $color4;
+                            transition: 0.4s;
+                            cursor: pointer;
+                        }
+                    }
+                    }
+
+                }
+            }
+        }
+
+        .computers-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        
+            .computer-wrapper {
+                width: calc(33% - 20px);
+                margin: 10px;
+                background-color: $color2;
+
+                .computer {
+                    display: flex;
+                    width: 100%;
+                }
+            .computer-text {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                font-weight: bold;
+
+                .computer-name {
+                    padding: 5px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $color3;
+                        transition: 0.4s;
+
+                    }
+                }
+
+                .computer-price {
+                    padding: 5px;
+                    color: $color3;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $color4;
+                        transition: 0.4s;
+
+                    }
+                }
+                
+               }
+
+            }
+        }
+    }
+
+    .footer {
+        color: $color3;
+        padding: 10px;
+        font-size: 0.8rem;
+
+        .footer-signature {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        
+        .icon {
+        font-size: 2rem;
+        margin-right: 10px;
+        background-color: $color;
+        padding: 15px;
+        border-radius: 25px;
+
+        &:hover {
+            background-color: $color3;
+            color: $color;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        }
+
     }
 }
