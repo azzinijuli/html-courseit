@@ -3,11 +3,11 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-$color: #EEF4D4;
+$color: #F5E9E2;
 $color2: white;
-$color3: #7C7A7A;
-$color4: #494949;
-$color5: #39393A;
+$color3: #C89FA3;
+$color4: #DA9F93;
+$color5: #B6465F;
 
 .body {
     background-color: white;
@@ -20,10 +20,13 @@ $color5: #39393A;
     max-width: 100vw;
 
     .title {
-        background-color: $color2;
         display: inline-block;
-        text-align: center;
         padding-left: 10px;
+        width: 100%;
+
+        .title-text {
+            color: $color5;
+        }
     }
 
     .content-wrapper {
@@ -37,6 +40,7 @@ $color5: #39393A;
         }
 
         .wrapper-dios {
+
             .subtitle {
                 margin: 10px;
             }
@@ -48,6 +52,7 @@ $color5: #39393A;
 
             .sidebar-title {
                 margin-left: 10px;
+                
             }
 
             .filter-list {
@@ -68,16 +73,21 @@ $color5: #39393A;
                     margin-bottom: 10px;
                     margin-left: 0;
                     border-radius: 20px;
+                    color: $color3;
 
                     &:hover {
-                        background-color: $color;
+                        background-color: $color2;
                         transition: 0.4s;
+                        cursor: pointer;
+                        
 
                     .cross-sign {
                         &:hover {
-                            color: rgba(253, 169, 215, 0.897);
+                            color: rgb(252, 146, 204);
                             transition: 0.4s;
                             cursor: pointer;
+                            transform: scale(1.4);
+                            
                         }
                     }
 
@@ -92,9 +102,17 @@ $color5: #39393A;
             flex-grow: 1;
         
             .computer-wrapper {
+                flex-grow: 1;
                 width: calc(33% - 20px);
                 margin: 10px;
                 background-color: $color2;
+                border-radius: 10px;
+                overflow: hidden;
+
+                &:hover {
+                    transform: scale(1.025);
+                    transition: 0.6s;
+                }
 
                 @media (max-width: 768px) {
                     width: calc(50% - 20px);
@@ -106,9 +124,39 @@ $color5: #39393A;
                     margin: 10px;
                 }
 
-                .computer {
+                .item1 {
                     display: flex;
                     width: 100%;
+                    height: 200px;
+                    background-image: url("https://images.mobilefun.co.uk/graphics/450pixelp/71174.jpg");
+                    background-size: cover;
+                    background-position: center;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .item2 {
+                    display: flex;
+                    width: 100%;
+                    height: 200px;
+                    background-image: url("https://cdn.shopify.com/s/files/1/2589/5096/products/Rose_Gold_Glitter_1080x.jpg?v=1565223700");
+                    background-size: cover;
+                    background-position: center;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .item3 {
+                    display: flex;
+                    width: 100%;
+                    height: 200px;
+                    background-image: url("https://www.skinit.com/media/catalog/product/cache/9dbe6a0c16a5b581719a1aa389879cfc/p/r/product_r_o_rose-gold-marble-macbook-pro-13-inch-_2016_-skin-1521657445_sknmrblle07mbpro3-pr-01_13.jpg");
+                    background-size: cover;
+                    background-position: center;
 
                     &:hover {
                         cursor: pointer;
@@ -152,7 +200,7 @@ $color5: #39393A;
     }
 
     .footer {
-        color: $color3;
+        color: $color5;
         padding: 10px;
         font-size: 0.8rem;
         

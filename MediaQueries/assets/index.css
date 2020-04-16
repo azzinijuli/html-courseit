@@ -14,13 +14,15 @@
   max-width: 100vw;
 }
 .main .title {
-  background-color: white;
   display: inline-block;
-  text-align: center;
   padding-left: 10px;
+  width: 100%;
+}
+.main .title .title-text {
+  color: #B6465F;
 }
 .main .content-wrapper {
-  background-color: #EEF4D4;
+  background-color: #F5E9E2;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -57,15 +59,18 @@
   margin-bottom: 10px;
   margin-left: 0;
   border-radius: 20px;
+  color: #C89FA3;
 }
 .main .content-wrapper .sidebar .filters-list .filter-type:hover {
-  background-color: #EEF4D4;
-  transition: 0.4s;
-}
-.main .content-wrapper .sidebar .filters-list .filter-type:hover .cross-sign:hover {
-  color: rgba(253, 169, 215, 0.897);
+  background-color: white;
   transition: 0.4s;
   cursor: pointer;
+}
+.main .content-wrapper .sidebar .filters-list .filter-type:hover .cross-sign:hover {
+  color: #fc92cc;
+  transition: 0.4s;
+  cursor: pointer;
+  transform: scale(1.4);
 }
 .main .content-wrapper .computers-wrapper {
   display: flex;
@@ -73,9 +78,16 @@
   flex-grow: 1;
 }
 .main .content-wrapper .computers-wrapper .computer-wrapper {
+  flex-grow: 1;
   width: calc(33% - 20px);
   margin: 10px;
   background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main .content-wrapper .computers-wrapper .computer-wrapper:hover {
+  transform: scale(1.025);
+  transition: 0.6s;
 }
 @media (max-width: 768px) {
   .main .content-wrapper .computers-wrapper .computer-wrapper {
@@ -89,11 +101,37 @@
     margin: 10px;
   }
 }
-.main .content-wrapper .computers-wrapper .computer-wrapper .computer {
+.main .content-wrapper .computers-wrapper .computer-wrapper .item1 {
   display: flex;
   width: 100%;
+  height: 200px;
+  background-image: url("https://images.mobilefun.co.uk/graphics/450pixelp/71174.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.main .content-wrapper .computers-wrapper .computer-wrapper .computer:hover {
+.main .content-wrapper .computers-wrapper .computer-wrapper .item1:hover {
+  cursor: pointer;
+}
+.main .content-wrapper .computers-wrapper .computer-wrapper .item2 {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-image: url("https://cdn.shopify.com/s/files/1/2589/5096/products/Rose_Gold_Glitter_1080x.jpg?v=1565223700");
+  background-size: cover;
+  background-position: center;
+}
+.main .content-wrapper .computers-wrapper .computer-wrapper .item2:hover {
+  cursor: pointer;
+}
+.main .content-wrapper .computers-wrapper .computer-wrapper .item3 {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-image: url("https://www.skinit.com/media/catalog/product/cache/9dbe6a0c16a5b581719a1aa389879cfc/p/r/product_r_o_rose-gold-marble-macbook-pro-13-inch-_2016_-skin-1521657445_sknmrblle07mbpro3-pr-01_13.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.main .content-wrapper .computers-wrapper .computer-wrapper .item3:hover {
   cursor: pointer;
 }
 .main .content-wrapper .computers-wrapper .computer-wrapper .computer-text {
@@ -107,20 +145,20 @@
 }
 .main .content-wrapper .computers-wrapper .computer-wrapper .computer-text .computer-name:hover {
   cursor: pointer;
-  color: #7C7A7A;
+  color: #C89FA3;
   transition: 0.4s;
 }
 .main .content-wrapper .computers-wrapper .computer-wrapper .computer-text .computer-price {
   padding: 5px;
-  color: #7C7A7A;
+  color: #C89FA3;
 }
 .main .content-wrapper .computers-wrapper .computer-wrapper .computer-text .computer-price:hover {
   cursor: pointer;
-  color: #494949;
+  color: #DA9F93;
   transition: 0.4s;
 }
 .main .footer {
-  color: #7C7A7A;
+  color: #B6465F;
   padding: 10px;
   font-size: 0.8rem;
 }
@@ -134,16 +172,16 @@
 }
 .main .footer .icons-wrapper .icon {
   margin-right: 20px;
-  color: #494949;
-  background-color: #EEF4D4;
+  color: #DA9F93;
+  background-color: #F5E9E2;
   padding: 6px;
   border-radius: 20px;
   font-size: 3em;
 }
 .main .footer .icons-wrapper .icon:hover {
   cursor: pointer;
-  background-color: #494949;
-  color: #EEF4D4;
+  background-color: #DA9F93;
+  color: #F5E9E2;
   transition: 0.4s;
 }
 
